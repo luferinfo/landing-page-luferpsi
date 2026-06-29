@@ -297,6 +297,37 @@
 
         input[type="radio"] { display: none; }
 
+		.testimonial-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    /* Remova qualquer 'height' fixo se houver */
+    height: auto; 
+    min-height: 350px; /* Define apenas uma altura mínima */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonial-text {
+    font-style: italic;
+    line-height: 1.6;
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    /* Garante que o texto longo não quebre o layout */
+    overflow: visible; 
+}
+
+/* Ajuste para telas pequenas */
+@media (max-width: 768px) {
+    .testimonial-card {
+        padding: 20px;
+        min-height: auto; /* No celular, o card cresce livremente */
+    }
+}
+
         /* ===== CTA ===== */
         .cta {
             background: linear-gradient(135deg, #1a2332, #2a3a4e);
@@ -473,17 +504,15 @@ O meu papel não é dar respostas prontas, mas ajudar você a escutar o que est�
                 <input type="radio" name="slide" id="slide1" checked>
                 <input type="radio" name="slide" id="slide2">
                 <input type="radio" name="slide" id="slide3">
-                <div class="slides">
-                    <div class="slide">
-                        <p>"Meu nome é Drica tenho 49 anos e por anos da minha vida eu precisei de terapia mas era resistente a ela.
-							Pela dor que eu sentia toda vez que eu iniciava uma terapia eu parava porque eu sentia muitas dores e com doutor de Luciano foi diferente. 
-							O começo foi bem dolorido eu quis desistir e ele me incentivou a continuar e hoje com dois anos de terapia eu posso dizer que eu estou curada de muitas coisas.
-							Existem muitas coisas que precisa ser trabalhado ainda, eu não consigo nem pensar em deixar o meu terapeuta porque ele faz muita diferença na minha vida, 
-							me ensinou a amadurecer, me ensinou a ser mais racional a pensar no meus atos e hoje eu vejo que nem tudo é sobre o outro, 
-							muitas coisas são sobre mim do que eu preciso mudar e trabalhar dentro de mim mesmo para que tudo em minha volta floresça. 
-							A terapia com o Dr Luciano tem sido uma experiência incrível que eu não quero deixar nunca!"</p>
-                        <span class="slide-author">— Drika</span>
-                    </div>
+                <div class="testimonial-card">
+    <div class="quote-icon">"</div>
+    <p class="testimonial-text">
+        "Meu nome é Drica, tenho 49 anos e por anos da minha vida eu precisei de terapia, mas era resistente a ela. Pela dor que eu sentia toda vez que eu iniciava uma terapia, eu parava... Com o Luciano foi diferente. O começo foi bem dolorido, eu quis desistir e ele me incentivou a continuar. 
+        <br><br>
+        Hoje, com dois anos de terapia, eu posso dizer que estou curada de muitas coisas. Ele me ensinou a amadurecer, a ser mais racional e a entender que nem tudo é sobre o outro, muitas coisas são sobre mim. A terapia tem sido uma experiência incrível que eu não quero deixar nunca!"
+    </p>
+    <p class="testimonial-author">- Drica, 49 anos</p>
+</div>
                     <div class="slide">
                         <p>"................"</p>
                         <span class="slide-author">— C. R.</span>
