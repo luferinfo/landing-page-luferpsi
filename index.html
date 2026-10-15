@@ -262,7 +262,7 @@
         }
         .slides {
             display: flex; transition: transform 0.6s ease;
-            width: 300%;
+            width: 200%;
         }
         .slide {
             width: 100%; flex-shrink: 0;
@@ -288,12 +288,11 @@
         .slider-nav label:hover { background: #c9a96e; }
 
         #slide1:checked ~ .slides { transform: translateX(0); }
-        #slide2:checked ~ .slides { transform: translateX(-33.333%); }
-        #slide3:checked ~ .slides { transform: translateX(-66.666%); }
-
+        #slide2:checked ~ .slides { transform: translateX(-50%); }
+        
         #slide1:checked ~ .slider-nav label[for="slide1"],
         #slide2:checked ~ .slider-nav label[for="slide2"],
-        #slide3:checked ~ .slider-nav label[for="slide3"] { background: #c9a96e; }
+         { background: #c9a96e; }
 
         input[type="radio"] { display: none; }
 
@@ -500,35 +499,33 @@ O meu papel não é dar respostas prontas, mas ajudar você a escutar o que est�
             <h2 class="section-title">O que dizem</h2>
             <p class="section-desc">Depoimentos de pacientes que compartilharam suas experiências</p>
 
-            <div class="slider">
-                <input type="radio" name="slide" id="slide1" checked>
-                <input type="radio" name="slide" id="slide2" checked>
-                <input type="radio" name="slide" id="slide3">
-                <div class="testimonial-card">
-    <div class="quote-icon">"</div>
-    <p class="testimonial-text">
-        "Meu nome é Drica, tenho 49 anos e por anos da minha vida eu precisei de terapia, mas era resistente a ela. Pela dor que eu sentia toda vez que eu iniciava uma terapia, eu parava... Com o Luciano foi diferente. O começo foi bem dolorido, eu quis desistir e ele me incentivou a continuar. 
-        <br><br>
-        Hoje, com dois anos de terapia, eu posso dizer que estou curada de muitas coisas. Ele me ensinou a amadurecer, a ser mais racional e a entender que nem tudo é sobre o outro, muitas coisas são sobre mim. A terapia tem sido uma experiência incrível que eu não quero deixar nunca!"
-    </p>
-    <p class="testimonial-author">- Drica, 49 anos</p>
-</div>
-                <div class="slide">
-                        <p class="testimonial-text">"A terapia tem me ajudado em todos os sentidos na minha vida, seja pessoal ou profissional. Tem me ajudado a controlar minha ansiedade nos momentos em que as resoluções não dependem só de mim. Me ajudou a perder o medo de voltar a dirigir na BR, isso que eu nunca sofri ou presenciei algum acidente, simplesmente do nada comecei a ter medo de coisas que antes eu não tinha, ainda não estou 100% confiante, mas já consegui realizar uma viagem. Enfim, terapia é algo que todos deveriam fazer, nos ajuda muito, mesmo que não percebemos de imediato, é um processo moroso, mas vale a pena."</p>
-                        <span class="slide-author">— R. A. D. V.</span>
-                    </div>
-             <!--          <div class="slide">
-                        <p>"...................."</p>
-                        <span class="slide-author">— L. S.</span>
-                    </div> -->
-                </div>
-          <!--      <div class="slider-nav">
-                    <label for="slide1"></label>
-                    <label for="slide2"></label>
-                    <label for="slide3"></label>
-                </div> -->
-            </div>
+          <div class="slider">
+    <input type="radio" name="slide" id="slide1" checked>
+    <input type="radio" name="slide" id="slide2">
+
+    <div class="slides">
+        <div class="slide">
+            <p>"Meu nome é Drica, tenho 49 anos e por anos da minha vida eu precisei de terapia, mas era resistente a ela. Pela dor que eu sentia toda vez que eu iniciava uma terapia, eu parava... Com o Luciano foi diferente. O começo foi bem dolorido, eu quis desistir e ele me incentivou a continuar.
+            <br><br>
+            Hoje, com dois anos de terapia, eu posso dizer que estou curada de muitas coisas. Ele me ensinou a amadurecer, a ser mais racional e a entender que nem tudo é sobre o outro, muitas coisas são sobre mim. A terapia tem sido uma experiência incrível que eu não quero deixar nunca!"</p>
+            <span class="slide-author">— Drica, 49 anos</span>
         </div>
+
+        <div class="slide">
+            <p>"A terapia tem me ajudado em todos os sentidos na minha vida, seja pessoal ou profissional. Tem me ajudado a controlar minha ansiedade nos momentos em que as resoluções não dependem só de mim.
+            <br><br>
+            Me ajudou a perder o medo de voltar a dirigir na BR, isso que eu nunca sofri ou presenciei algum acidente, simplesmente do nada comecei a ter medo de coisas que antes eu não tinha. Ainda não estou 100% confiante, mas já consegui realizar uma viagem.
+            <br><br>
+            Enfim, terapia é algo que todos deveriam fazer, nos ajuda muito, mesmo que não percebemos de imediato. É um processo moroso, mas vale a pena."</p>
+            <span class="slide-author">— R. A. D. V.</span>
+        </div>
+    </div>
+
+    <div class="slider-nav">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+    </div>
+</div>
     </section>
 
     <!-- CTA -->
